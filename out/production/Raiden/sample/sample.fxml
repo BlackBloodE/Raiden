@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" onKeyPressed="#OKP" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="720.0" prefWidth="480.0">
+         <children>
+            <ImageView fx:id="IV" fitHeight="1803.0" fitWidth="480.0" pickOnBounds="true" preserveRatio="true" y="-1083.0">
+               <image>
+                  <Image url="@bg.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="player" fitHeight="150.0" fitWidth="200.0" onKeyPressed="#OKP" onKeyReleased="#OKR" pickOnBounds="true" preserveRatio="true" x="165.0" y="556.0">
+               <image>
+                  <Image url="@player.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+   </children>
+</GridPane>
