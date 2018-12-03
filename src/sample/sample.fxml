@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane alignment="center" hgap="10" onKeyPressed="#OKP" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<GridPane fx:id="pane" alignment="center" hgap="10" onKeyPressed="#OKP" onKeyReleased="#OKR" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <columnConstraints>
       <ColumnConstraints />
    </columnConstraints>
@@ -22,9 +22,14 @@
                   <Image url="@bg.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="player" fitHeight="150.0" fitWidth="200.0" onKeyPressed="#OKP" onKeyReleased="#OKR" pickOnBounds="true" preserveRatio="true" x="165.0" y="556.0">
+            <ImageView fx:id="player" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" x="165.0" y="556.0">
                <image>
                   <Image url="@player.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bullet1" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" x="165.0" y="1080.0">
+               <image>
+                  <Image url="@bullet.png" />
                </image>
             </ImageView>
          </children></Pane>
