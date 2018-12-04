@@ -80,6 +80,7 @@ public class Controller{
             bullet[x] = bullet1;
             bullets[x] = new bullet(165,556,bullet[x]);
         }
+
         Thread bullet1_thread = new Thread(bullets[0]);
         Thread bullet2_thread = new Thread(bullets[1]);
 //        Thread bullet3_thread = new Thread(bullets[2]);
